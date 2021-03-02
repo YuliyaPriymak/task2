@@ -3,6 +3,7 @@ import './App.css';
 import {useState} from "react";
 import ImageItem from "./components/ImageItem/ImageItem";
 import OpenImg from "./components/OpenImg/OpenImg";
+import Header from "./components/Header/Header";
 
 function App() {
     const [imgSrc, setImgSrc] = useState('')
@@ -16,9 +17,7 @@ function App() {
     }
     return (
         <div className="App">
-            <div className="header container">
-                <span>Number of elements: {sources.length}</span>
-            </div>
+            <Header sources={sources}/>
             <div className="images-list d-flex flex-wrap justify-content-between">
                 {sources.map(source => <ImageItem
                     onImgZoom={onImgZoom}
