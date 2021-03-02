@@ -15,4 +15,14 @@
     flex-direction: column;
 
   }
+
+}
+@media only screen and (max-width: 900px){
+  .modal-box {
+    width: 90%;
+    justify-items: center;
+    img{
+      width: 100%;
+    }
+  }
 }
